@@ -10,7 +10,8 @@ Contact
 </div>
 <div class="container mb-3">
     <h1 class="text-center">Contact us</h1>
-    <form>
+    <form method="POST" action="/contact">
+    {% csrf_token %}
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" name="name">
@@ -28,7 +29,7 @@ Contact
 
         <div class="form-group my-3">
             <label for="desc" class="form-label">Tell me What you want to contact me for</label>
-            <input type="text" class="form-control" id="desc" name="desc">
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
         </div>
         <div class="container text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
