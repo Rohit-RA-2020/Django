@@ -5,5 +5,35 @@ Contact
 {% endblock title %}
 
 {% block body %}
-This is my Contact block
+<div class="container-fluid px-0">
+    <img src="https://source.unsplash.com/1200x400/weekly?phone,contact/" class="d-block w-100 mx-0">
+</div>
+<div class="container mb-3">
+    <h1 class="text-center">Contact us</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="form-label">Enter Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="number" class="form-label">Enter Your Phone number</label>
+            <input type="number" class="form-control" id="number" name="number">
+        </div>
+
+        <div class="form-group my-3">
+            <label for="desc" class="form-label">Tell me What you want to contact me for</label>
+            <input type="text" class="form-control" id="desc" name="desc">
+        </div>
+        <div class="container text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
 {% endblock body %}
